@@ -8,6 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="loop_style.css">
 </head>
 <body>
+
+<div class="loader_bg">
+	<div class="loader"></div>
+</div>	
+
 	<div class="top">
 		<a href="#home"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 	</div>
@@ -149,5 +154,12 @@ Do-while loop is similar to while loop, however there is a difference between th
 		 <i class="fa fa-github"></i></a>
 	</div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	setTimeout(function(){
+		$('.loader_bg').fadeToggle();
+	},  2500);
+</script>
 </body>
 </html>
