@@ -2,28 +2,43 @@
 <html>
 <head>
 	<title>Looping In Java</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+	<meta name="viewport" content="width-divice-width,initial scale 1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="loop_style.css">
 </head>
 <body>
+	<div class="top">
+		<a href="#home"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+	</div>
+
 <div class="main" id="home">
+	<label for="toggle">&#9776</label>
+		<input type="checkbox" id="toggle">
 	<div class="nav">
 		<div class="logo">Aviral Sachan</div>
-		<div class="navbar_items">
+		<div class="menu">
 			<ul>
-				<li><a href="#home">Home</a></li>	
-				<li><a href="#defi">Definition of Loop</a></li>		
-				<li><a href="#type">Types Of Loops</a></li>	
-				<li><a href="#contact">Contact</a></li>	
+				<li><a href="#home">Home</a></li>
+				<li><a href="#defi">Definiton</a></li>
+				<li><a href="#type">Types of loop</a>
+					<ul>
+						<li><a href="#for">For Loop</a></li>
+						<li><a href="#while">While Loop</a></li>
+						<li><a href="#do">Do-While Loop</a></li>
+					</ul>
+				</li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="ban_img">
-	<div class="bancont"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<h1>Doubt While looping or Don't Know How to Loop in JAVA <br><span>Take a Look !</span></h1>
-</div>
-</div>
+	<div class="ban">
+		<div class="ban-con">
+				<br><br><br><br><br><br>	<br><br><br><br><br><br>	<br><br><br><br><br><br>
+			<h1>Doubt While Looping or don't how to loop <br> <span>Then take a look !</span></h1><br>
+			<div class="btn"><button><a href="#defi">Learn More !</a></button></div>
+		</div>
+	</div>
 <div class="def" id="defi">
 	<h1 class="title">
 		<br>
@@ -45,7 +60,12 @@ Java provides three ways for executing the loops. While all the ways provide sim
 	<h1 class="title">
 		Different types of Loops
 	</h1>
-	<p>1. For Loop :<br> <br>First step: In for loop, initialization happens first and only one time, which means that the initialization part of for loop only executes once.<br><br>
+
+
+	<div class="for" id="for">
+		<br><br>
+		<h1 class="title">For Loop</h1>
+	<p class="body"><br> <br>First step: In for loop, initialization happens first and only one time, which means that the initialization part of for loop only executes once.<br><br>
 
 Second step: Condition in for loop is evaluated on each iteration, if the condition is true then the statements inside for loop body gets executed. Once the condition returns false, the statements in for loop does not execute and the control gets transferred to the next statement in the program after for loop. 	<br><br>
 Third step: After every execution of for loop’s body, the increment/decrement part of for loop executes that updates the loop counter.</p> 
@@ -61,7 +81,12 @@ Third step: After every execution of for loop’s body, the increment/decrement 
 </figure>
 </div>
 <h3>To make it more clear i have assigned a screenshot of a solved program</h3><br><br>
-<p>2. While Loop: <br><br>
+
+</div>
+<div class="while" id="while">
+	<br><br>
+	<h1 class="title">While Loop</h1>
+<p class="body"> <br><br>
 Java while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.<br> <br>
 Conditional Expression: In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of the loop and go to update expression. Otherwise, we will exit from the while loop.<br> <br>
 Update Expression: After executing the loop body, this expression increments/decrements the loop variable by some value.</p>
@@ -71,19 +96,19 @@ Update Expression: After executing the loop body, this expression increments/dec
 </figure>
 </div>
 <h4>Flowchart of While Loop</h4>
-<p>I believe that the most difficult and confusing syntax in looping of java is of while loop. To make it more clear I have assigned a video below to make it more clear.</p>
-<div class="vid"><video controls="controls" poster="poster.png">
-		  <source src="whileloop.mp4" type="video/mp4">
-	</video>
+
 </div>
-<p>3. Do-While Loop : <br><br>
+<div class="do" id="do">
+	<br><br>
+	<h1 class="title">Do-While Loop</h1>
+<p class="body"> <br><br>
 Do-while loop is similar to while loop, however there is a difference between them:<br><br> In while loop, condition is evaluated before the execution of loop’s body but in do-while loop condition is evaluated after the execution of loop’s body.First, the statements inside loop execute and then the condition gets evaluated, if the condition returns true then the control gets transferred to the “do” else it jumps to the next statement after do-while.</p>
 <div class="jsm">
 	<figure>
 		<img src="dowhileloop.jpg">
 	</figure>
 </div>
-<h4>FLow Chart of Do-While loop.</h4>
+<h4>Flow Chart of Do-While loop.</h4>
 <div class="jsm">
 	<figure>
 		<img src="dowhile.png">
@@ -91,19 +116,32 @@ Do-while loop is similar to while loop, however there is a difference between th
 </div>
 <h3>To make it more clear i have assigned a screenshot of a solved program</h3>
 </div>
-	<div class="contact" id="contact">
-			<br><br><br><br><br>
-			<h1 class="title">Contact ME</h1>
-			<div class="form">
-				<input type="Text" placeholder="E-Mail">
-				<input type="Text" placeholder="Subject">
-				<textarea placeholder="Message"></textarea>
-				<div class="btn"><a href="#">SUBMIT</a></div>
-			</div>
-
-		<i class="fa fa-envelope">aviral.sachan.410@gmail.com</i>
-		</div>
-					<div class="footer">
+</div>
+	<div class="container" id="contact">
+		<div class="heading">
+			<h1 class="title">Contact Me</h1>
+			 <div class="row">
+      <div class="card">
+        <div class="card-header">
+          <h1>G-Mail</h1>
+        </div>
+        <div class="card-body">
+          <p>
+            If you want to discuss about source code or want to give any suggestions then you can mail me on : <br><i class="fa fa-envelope" aria-hidden="true">aviral.sachan.410@gmail.com</i>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h1>Github</h1>
+        </div>
+        <div class="card-body">
+          <p>
+            For source code of this and another websites created by me, you can visit my github page : <br><a href="https://github.com/aviral410/"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </div>
+<div class="footer">
 		<a href="#">Developed By Aviral Sachan</a>
 		<a href="https://www.facebook.com/aviral.sachan.90/"> <i class="fa fa-facebook"></i></a>
 		<a href="https://twitter.com/AviralSachan2"> <i class="fa fa-twitter"></i></a>
